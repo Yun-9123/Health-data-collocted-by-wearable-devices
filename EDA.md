@@ -38,10 +38,32 @@ dtypes: float64(8), int64(1), object(8)
 memory usage: 315.6+ KB
 ```
 ```
+Column Descriptions
+Test_Date: Date of performance evaluation (YYYY-MM-DD)
+Device_Name: Full name of the device (Brand + Model)
+Brand: Manufacturer of the device
+Model: Specific model name
+Category: Device type (e.g., Smartwatch, Fitness Tracker)
+Price_USD: Retail price in US dollars
+Battery_Life_Hours: Battery life (in hours) on a full charge
+Heart_Rate_Accuracy_Percent: Heart rate monitoring accuracy (%)
+Step_Count_Accuracy_Percent: Step counting accuracy (%)
+Sleep_Tracking_Accuracy_Percent: Sleep tracking accuracy (%)
+Water_Resistance_Rating: Water resistance certification (e.g., IP68, 5ATM)
+User_Satisfaction_Rating: User satisfaction score (1–10 scale)
+GPS_Accuracy_Meters: GPS accuracy (in meters, if available)
+Connectivity_Features: Supported connectivity options (e.g., Bluetooth, WiFi, NFC, LTE)
+Health_Sensors_Count: Number of health-related sensors
+App_Ecosystem_Support: Supported app ecosystems (e.g., iOS, Android, Cross-platform)
+Performance_Score: Composite performance score (0–100
+```
+```
 df.info()
 # Non-Null Count: number of non-null values in each column which is useful for spotting missing data.
 ```
-
+***
+3.
+***
 
 ### Questions:
 1. In the field of health informatics, due to privacy issues (such as the HIPAA legislation), it is very difficult to obtain real patient data. Scientists often use synthetic data to Simulate experiments, and train models
