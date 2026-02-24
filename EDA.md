@@ -58,8 +58,33 @@ App_Ecosystem_Support: Supported app ecosystems (e.g., iOS, Android, Cross-platf
 Performance_Score: Composite performance score (0–100
 ```
 ```
+Statistical info
+------ statistic info ------
+         Price_USD  Battery_Life_Hours  Heart_Rate_Accuracy_Percent  ...  GPS_Accuracy_Meters  Health_Sensors_Count  Performance_Score
+count  2375.000000         2375.000000                  2375.000000  ...          1743.000000           2375.000000        2375.000000
+mean    359.444484          160.584463                    93.483907  ...             3.247676              8.912842          64.047621
+std     215.671035          234.815896                     3.172078  ...             1.022825              3.559990           5.109075
+min      30.000000           18.000000                    85.010000  ...             1.500000              2.000000          55.100000
+25%     211.875000           46.900000                    92.140000  ...             2.400000              6.000000          60.400000
+50%     334.370000           99.800000                    94.070000  ...             3.200000              9.000000          62.200000
+75%     487.930000          177.400000                    95.925000  ...             4.100000             12.000000          67.700000
+max     989.480000         2118.100000                    98.000000  ...             5.000000             15.000000          78.300000
+```
+
+```
 df.info()
 # Non-Null Count: number of non-null values in each column which is useful for spotting missing data.
+
+df.describe()
+# count: Total number of non-null entries in each column.
+# mean: Average (mean) of the values in the column.
+# std: Standard deviation showing how spread out the values are.
+# min: Minimum value in the column.
+# 25%: The 25th percentile (Q1) which means 25% of the data points are less than this value.
+# 50%: Median value (50th percentile) where half the data points are below it.
+# 75%: The 75th percentile (Q3) means 75% of the data points are below this value.
+# max: Maximum value in the column.
+
 ```
 ***
 3.
